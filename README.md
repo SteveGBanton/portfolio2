@@ -1,3 +1,3 @@
 # Steve Banton's Portfolio
 
-Built with React / Redux.
+My portfolio V2. Up at stevebanton.com, built with React.
