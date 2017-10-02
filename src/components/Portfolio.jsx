@@ -6,6 +6,7 @@ import Paper from 'material-ui/Paper';
 import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
+import Chip from 'material-ui/Chip';
 
 
 const onTags = stateTags => stateTags.map((item, index) => (item[1] == 'on' ? item[0] : null));
@@ -26,6 +27,22 @@ const tagIntersection = (stateTags, projectTags) => {
 };
 
 const projects = [
+  {
+    title: 'Educa Admin',
+    image: 'images/portfolio/educa.jpg',
+    description: 'Fully-featured school administration software. Account management for Students, Teachers, Parents and Administrators, and modules to create custom forms, uploading to cloud storage, charting student progress, built-in internationalization and more.',
+    tags: ['meteor', 'react', 'mongodb'],
+    link: '',
+    github: '',
+  },
+  {
+    title: 'Learn Map',
+    image: 'images/portfolio/learn-map.jpg',
+    description: 'A website allowing experts to post the best learning resources for any topic and allowing learners to track their progress.',
+    tags: ['meteor', 'react', 'mongodb'],
+    link: '',
+    github: '',
+  },
   {
     title: 'BoldPointStudio.com',
     image: 'images/portfolio/boldpoint.jpg',
@@ -107,7 +124,7 @@ const projects = [
     github: 'https://github.com/SteveGBanton/scatterplot-cycling',
   },
   {
-    title: 'Reusable Vector Map: Meteorite Landings Mapped',
+    title: 'Vector Map: Meteorite Landings Mapped',
     image: 'images/portfolio/world-map.jpg',
     description: 'A visualization of all meteorites that have every been recorded, mapped to their landing location. Zoomable map & tooltip on hover shows extra data about each meteorite.',
     tags: ['d3'],
@@ -140,18 +157,15 @@ const styles = {
   media: {
     height: 200,
   },
+  chip: {
+    margin: 4,
+  },
 };
 
-const Portfolio = ({ tags }) => (
+const Portfolio = () => (
   <div id="portfolio" className="app-padding">
     <h1>Portfolio</h1>
     <div id="portfolio-items">
-      {/* title: 'Dynamic Bar Graph: US GDP By Quarter',
-      image: 'images/portfolio/bar-graph.jpg',
-      description: 'An reuasable, animated D3.js bar graph of the US GDP by quarter since 1947, with data tooltip on hover.',
-      tags: ['d3'],
-      link: 'http://stevebanton.com/bar-graph-us-gdp',
-      github: 'https://github.com/SteveGBanton/bar-graph-us-gdp', */}
       {projects.map(item => (
         <Card style={styles.card} key={item.image}>
           <CardMedia
@@ -167,22 +181,36 @@ const Portfolio = ({ tags }) => (
             <Typography component="p">
               {item.description}
             </Typography>
+            {item.tags.map(tag => (
+              <Chip
+                key={`${item.title}-${tag}`}
+                style={{ margin: 4 }}
+                label={tag}
+              />
+            ),
+            )}
           </CardContent>
           <CardActions>
-            {(item.github)
-              ?
-                <a href={item.github} target="new">
-                  <Button dense color="primary">
+            {(item.github) ?
+              <a href={item.github} target="new">
+                <Button dense color="primary">
                     Github
-                  </Button>
-                </a>
+                </Button>
+              </a>
               : ''
             }
-            <a href={item.link} target="new">
+            {(item.link) ?
+              <a href={item.link} target="new">
+                <Button dense color="primary">
+                  View Project
+                </Button>
+              </a>
+              :
               <Button dense color="primary">
-                View Project
+                - In Progress -
               </Button>
-            </a>
+            }
+
           </CardActions>
         </Card>
       ))}

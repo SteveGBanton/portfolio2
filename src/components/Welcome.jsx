@@ -23,11 +23,9 @@ const Welcome = () => {
       <div id="welcome-welcome" className="app-padding">
         <h1>Hi, I'm Steve.
         <br />
-        I build full-stack JavaScript
+        I build JavaScript apps
         <br />
-        applications for desktop
-        <br />
-        and mobile
+        for desktop and mobile        
         <span className="blink">_</span>
         </h1>
       </div>
