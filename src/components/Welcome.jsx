@@ -1,32 +1,68 @@
 import React from 'react';
+import Scroll from 'react-scroll';
 
-const Welcome = () => {
+const Link = Scroll.Link;
 
-  return (
-    <div>
+
+const Welcome = () => (
+  <div>
     <div id="welcome-header" className="shadow2">
 
       <div id="welcome-menu" className="app-padding">
         <div id="welcome-logo">
           <img
-            src='./images/logo-b.png'
-            style={{ width: 30, height: 30, opacity: 0.8}}
-            >
-          </img>
+            alt="logo"
+            src="./images/logo-b.png"
+            style={{ width: 30, height: 30, opacity: 0.8 }}
+          />
         </div>
         <div id="welcome-menu-items">
-          <span className="nav-link"><a href="#">Portfolio</a></span>
-          <span className="nav-link"><a href="#">Contact</a></span>
+          <Link
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              height: 30,
+              cursor: 'pointer',
+              padding: 0,
+              margin: 10,
+            }}
+            className="nav-link"
+            to="portfolio"
+            spy
+            smooth
+            offset={-100}
+            duration={500}
+          >
+            Portfolio
+          </Link>
+          <Link
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              height: 30,
+              cursor: 'pointer',
+              padding: 0,
+              margin: 10,
+            }}
+            className="nav-link"
+            to="contact"
+            spy
+            smooth
+            offset={-100}
+            duration={500}
+          >
+            Contact
+          </Link>
         </div>
       </div>
 
       <div id="welcome-welcome" className="app-padding">
         <h1>Hi, I'm Steve.
-        <br />
+          <br />
         I build JavaScript apps
-        <br />
-        for desktop and mobile        
-        <span className="blink">_</span>
+          <br />
+        for desktop and mobile
+          <span className="blink">_</span>
         </h1>
       </div>
 
@@ -34,7 +70,6 @@ const Welcome = () => {
 
 
   </div>
-  )
-}
+);
 
 export default Welcome;

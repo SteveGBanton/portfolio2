@@ -1,30 +1,12 @@
-
-
 import React from 'react';
-import Paper from 'material-ui/Paper';
+import Scroll from 'react-scroll';
 
 import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
 import Chip from 'material-ui/Chip';
 
-
-const onTags = stateTags => stateTags.map((item, index) => (item[1] == 'on' ? item[0] : null));
-
-const tagIntersection = (stateTags, projectTags) => {
-  let intersectVerify = false;
-
-  for (let i = 0; i < stateTags.length; i++) {
-    for (let j = 0; j < projectTags.length; j++) {
-      if (stateTags[i] == projectTags[j]) {
-        intersectVerify = true;
-      } else {
-
-      }
-    }
-  }
-  return intersectVerify;
-};
+const Element = Scroll.Element;
 
 const projects = [
   {
@@ -164,6 +146,7 @@ const styles = {
 
 const Portfolio = () => (
   <div id="portfolio" className="app-padding">
+    <Element name="portfolio" className="element"/>
     <h1>Portfolio</h1>
     <div id="portfolio-items">
       {projects.map(item => (
@@ -181,14 +164,16 @@ const Portfolio = () => (
             <Typography component="p">
               {item.description}
             </Typography>
-            {item.tags.map(tag => (
-              <Chip
-                key={`${item.title}-${tag}`}
-                style={{ margin: 4 }}
-                label={tag}
-              />
-            ),
-            )}
+            <div style={{ display: 'flex', flexFlow: 'row nowrap', width: '100%', justifyContent: 'center', marginTop: 15 }}>
+              {item.tags.map(tag => (
+                <Chip
+                  key={`${item.title}-${tag}`}
+                  style={{ margin: 4 }}
+                  label={tag}
+                />
+              ),
+              )}
+            </div>
           </CardContent>
           <CardActions>
             {(item.github) ?
@@ -215,53 +200,7 @@ const Portfolio = () => (
         </Card>
       ))}
 
-
     </div>
-    {/* <span className="tag-labels">Filter:</span>
-      <span className="tag-on" onClick={() => {
-
-        for (let i = 0; i < tags.length; i++) {
-
-          store.dispatch(
-            tagsOn(tags[i], tags)
-          );
-
-        }
-
-      }}>All</span>
-      <span className="tag-on" onClick={() => {
-
-        for (let i = 0; i < tags.length; i++) {
-
-          store.dispatch(
-            tagsOff(tags[i], tags)
-          );
-
-        }
-
-
-      }}>Clear</span>
-
-        <div id="tag-container">
-
-
-          {tags.map((item, index, allTags) => {
-            return <Tag tag={item} key={index} allTags={allTags}/>
-          })}
-        </div>
-        <div id='project-container'>
-        {
-          projects.map((item, index) => {
-          if (tagIntersection(onTags(tags), item.tags)) {
-            return <Project project={item} key={index}/>;
-          } else {
-            return
-          }
-        })
-
-        }
-
-        </div> */}
 
   </div>
 );

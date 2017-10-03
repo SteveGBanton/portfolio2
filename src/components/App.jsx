@@ -1,6 +1,5 @@
 import React from 'react';
-import Toolbar from 'material-ui/Toolbar';
-import Typography from 'material-ui/Typography';
+import Scroll from 'react-scroll';
 
 import Welcome from './Welcome.jsx';
 import Me from './Me.jsx';
@@ -8,42 +7,42 @@ import WhatIDo from './WhatIDo.jsx';
 import Portfolio from './Portfolio.jsx';
 import Contact from './Contact.jsx';
 
-const colors = {
-  primaryDark: '#1976D2',
-  primary: '#2196F3',
-  primaryLight: '#BBDEFB',
-  primaryText: '#FFFFFF',
-  accent: '#FFC107',
-  primaryText: '#212121',
-  secondaryText: '#757575',
-  divider: '#BDBDBD',
-}
+const Events = Scroll.Events;
+const scroll = Scroll.animateScroll;
+const scrollSpy = Scroll.scrollSpy;
 
 export default class App extends React.Component {
-
-  constructor () {
-    super()
+  constructor() {
+    super();
     this.state = {
       tags: '',
       projects: '',
     };
   }
 
-  componentDidMount () {
+  componentDidMount() {
+    Events.scrollEvent.register('begin', function (to, element) {
+      console.log('begin', arguments);
+    });
+
+    Events.scrollEvent.register('end', function (to, element) {
+      console.log('end', arguments);
+    });
+
+    scrollSpy.update();
   }
 
- render() {
+  render() {
     return (
       <div id="app">
 
-
-          <Welcome />
-          <Me />
-          <WhatIDo />
-          <Portfolio />
-          <Contact />
+        <Welcome />
+        <Me />
+        <WhatIDo />
+        <Portfolio />
+        <Contact />
 
       </div>
-    )
+    );
   }
 }
