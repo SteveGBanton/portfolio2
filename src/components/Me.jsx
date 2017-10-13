@@ -10,7 +10,7 @@ const Me = ({ }) => (
       />
     </div>
     <div id="me-description">
-        I’m a developer from Toronto. I create applications that help businesses work using Meteor & React.
+        I’m a developer from Toronto. I like to create business-centered applications using Meteor & React.
     </div>
   </div>
 );

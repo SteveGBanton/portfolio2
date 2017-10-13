@@ -26964,7 +26964,7 @@ var Me = function Me(_ref) {
     _react2.default.createElement(
       "div",
       { id: "me-description" },
-      "I\u2019m a developer from Toronto. I create applications that help businesses work using Meteor & React."
+      "I\u2019m a developer from Toronto. I like to create business-centered applications using Meteor & React."
     )
   );
 };
