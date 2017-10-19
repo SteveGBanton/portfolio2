@@ -70,7 +70,7 @@ const projects = [
     image: 'images/portfolio/wikipedia.jpg',
     description: 'A Wikipedia search page that uses the Wikipedia API to call search results before leaving the site.',
     tags: ['jquery'],
-    link: 'https://codepen.io/stevesacct/pen/OWdaGe',
+    link: 'https://codepen.io/stevesacct/full/OWdaGe/',
     github: '',
   },
   {
