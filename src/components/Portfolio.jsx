@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: 'Learn Map',
-    image: 'images/portfolio/learn-map.jpg',
+    image: 'images/portfolio/learn-map-2.jpg',
     description: 'A website allowing experts to post the best learning resources for any topic and allowing learners to track their progress.',
     tags: ['meteor', 'react', 'mongodb'],
     link: '',
