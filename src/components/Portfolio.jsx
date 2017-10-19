@@ -26,14 +26,6 @@ const projects = [
     github: '',
   },
   {
-    title: 'BoldPointStudio.com',
-    image: 'images/portfolio/boldpoint.jpg',
-    description: 'Responsive single page website for Boldpoint Studio, a design and marketing firm based in Toronto. Website built from scratch using jQuery.',
-    tags: ['jquery'],
-    link: 'http://www.boldpointstudio.com',
-    github: '',
-  },
-  {
     title: 'Recipe Box',
     image: 'images/portfolio/recipe.jpg',
     description: 'An editable recipe box created with React, Redux and Material Design. Add and edit recipes, with functionality to quickly add and delete ingredients one by one.',
@@ -120,6 +112,14 @@ const projects = [
     tags: ['node', 'express'],
     link: 'https://simple-timestamp-service.herokuapp.com/',
     github: 'https://github.com/SteveGBanton/timestamp-service',
+  },
+  {
+    title: 'BoldPointStudio.com',
+    image: 'images/portfolio/boldpoint.jpg',
+    description: 'Responsive single page website for Boldpoint Studio, a design and marketing firm based in Toronto. Website built from scratch using jQuery.',
+    tags: ['jquery'],
+    link: 'http://www.boldpointstudio.com',
+    github: '',
   },
   {
     title: 'AlbionLandscaping.Net',
