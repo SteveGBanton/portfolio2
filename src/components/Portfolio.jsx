@@ -146,17 +146,28 @@ const styles = {
 
 const Portfolio = () => (
   <div id="portfolio" className="app-padding">
-    <Element name="portfolio" className="element"/>
+    <Element name="portfolio" className="element" />
     <h1>Portfolio</h1>
     <div id="portfolio-items">
       {projects.map(item => (
         <Card style={styles.card} key={item.image}>
-          <CardMedia
-            image={`../../${item.image}`}
-            style={styles.media}
-            title={item.title}
-            className="darken"
-          />
+          {(item.link) ?
+            <a href={item.link} target="new">
+              <CardMedia
+                image={`../../${item.image}`}
+                style={styles.media}
+                title={item.title}
+                className="darken"
+              />
+            </a>
+            :
+            <CardMedia
+              image={`../../${item.image}`}
+              style={styles.media}
+              title={item.title}
+              className="darken"
+            />
+          }
           <CardContent>
             <Typography type="headline" component="h2">
               {item.title}

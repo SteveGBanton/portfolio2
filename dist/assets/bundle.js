@@ -35441,7 +35441,16 @@ var Portfolio = function Portfolio() {
         return _react2.default.createElement(
           _Card2.default,
           { style: styles.card, key: item.image },
-          _react2.default.createElement(_Card.CardMedia, {
+          item.link ? _react2.default.createElement(
+            'a',
+            { href: item.link, target: 'new' },
+            _react2.default.createElement(_Card.CardMedia, {
+              image: '../../' + item.image,
+              style: styles.media,
+              title: item.title,
+              className: 'darken'
+            })
+          ) : _react2.default.createElement(_Card.CardMedia, {
             image: '../../' + item.image,
             style: styles.media,
             title: item.title,
