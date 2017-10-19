@@ -35313,7 +35313,11 @@ var projects = [{
   github: ''
 }, {
   title: 'Learn Map',
+<<<<<<< HEAD
   image: 'images/portfolio/learn-map-2.gif',
+=======
+  image: 'images/portfolio/learn-map-2.jpg',
+>>>>>>> 9c5e2faf50da9978f8c6c86a97f3cd2ea97a2478
   description: 'A website allowing experts to post the best learning resources for any topic and allowing learners to track their progress.',
   tags: ['meteor', 'react', 'mongodb'],
   link: '',
