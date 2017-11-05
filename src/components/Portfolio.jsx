@@ -26,6 +26,14 @@ const projects = [
     github: '',
   },
   {
+    title: 'Yago URL Shortener',
+    image: 'images/portfolio/yago.jpg',
+    description: 'A simple URL shortener service with OAuth. Built using Meteor, React & MongoDB, hosted at Heroku and mLab.',
+    tags: ['meteor', 'react', 'mongodb'],
+    link: 'https://yagosite.herokuapp.com/',
+    github: 'https://github.com/SteveGBanton/yago',
+  },
+  {
     title: 'Recipe Box',
     image: 'images/portfolio/recipe.jpg',
     description: 'An editable recipe box created with React, Redux and Material Design. Add and edit recipes, with functionality to quickly add and delete ingredients one by one.',

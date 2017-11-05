@@ -13,7 +13,33 @@ const Me = ({ }) => (
     </div>
     <div id="me-description">
       <div>
-        I’m a developer from Toronto. I like to create business-centered applications using <a href="http://meteor.com" target="new"><span className="bold-font hover-yellow">Meteor <span className="material-icons">open_in_new</span></span></a> & <a href="http://reactjs.org" target="new"><span className="bold-font hover-yellow">React <span className="material-icons">open_in_new</span></span></a>. I'm also a big fan of <a href="http://material.io" target="new"><span className="bold-font hover-yellow">Material Design <span className="material-icons">open_in_new</span></span></a>.
+        I’m a developer from Toronto. I like to create business-centered applications using
+        <a href="http://meteor.com" target="new"> 
+          <span className="bold-font hover-yellow">
+            &nbsp;Meteor&nbsp;
+            <span className="material-icons">
+              open_in_new
+            </span>
+          </span>
+        </a>
+          &
+        <a href="http://reactjs.org" target="new">
+          <span className="bold-font hover-yellow">
+            &nbsp;React&nbsp;
+            <span className="material-icons">
+              open_in_new
+            </span>
+          </span>
+        </a>.
+        I&apos;m also a big fan of&nbsp;
+        <a href="http://material.io" target="new">
+          <span className="bold-font hover-yellow">
+            Material Design
+            <span className="material-icons">
+              open_in_new
+            </span>
+          </span>
+        </a>.
       </div>
     </div>
   </div>
