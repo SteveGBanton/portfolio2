@@ -4,7 +4,8 @@
   "description": "Portfolio of Steve Banton",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server && ./node_modules/.bin/webpack"
+    "start": "./node_modules/.bin/webpack-dev-server && ./node_modules/.bin/webpack",
+    "lint": "eslint ."
   },
   "author": "Steve Banton",
   "license": "MIT",
