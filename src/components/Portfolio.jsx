@@ -18,12 +18,12 @@ const projects = [
     github: '',
   },
   {
-    title: 'Learn Map',
+    title: 'LearnMap',
     image: 'images/portfolio/learn-map-2.gif',
-    description: 'A website allowing experts to post the best learning resources for any topic and allowing learners to track their progress.',
+    description: 'Project Manager for a remote app project. LearnMap is website allowing experts to post the best learning resources for any topic and allowing learners to track their progress. Currently hosted at Heroku and mLab.',
     tags: ['meteor', 'react', 'mongodb'],
-    link: '',
-    github: '',
+    link: 'http://www.learnmap.site/',
+    github: 'https://github.com/SteveGBanton/Voyage2-Bears-13',
   },
   {
     title: 'Yago URL Shortener',

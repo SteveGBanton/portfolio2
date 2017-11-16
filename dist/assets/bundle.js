@@ -26972,14 +26972,14 @@ var Me = function Me(_ref) {
       _react2.default.createElement(
         'div',
         null,
-        'I\u2019m a developer from Toronto. I like to create business-centered applications using',
+        'I\u2019m a developer from Toronto. I like to create business-centered applications using\xA0',
         _react2.default.createElement(
           'a',
           { href: 'http://meteor.com', target: 'new' },
           _react2.default.createElement(
             'span',
             { className: 'bold-font hover-yellow' },
-            '\xA0Meteor\xA0',
+            'Meteor\xA0',
             _react2.default.createElement(
               'span',
               { className: 'material-icons' },
@@ -26987,14 +26987,14 @@ var Me = function Me(_ref) {
             )
           )
         ),
-        '&',
+        '&\xA0',
         _react2.default.createElement(
           'a',
           { href: 'http://reactjs.org', target: 'new' },
           _react2.default.createElement(
             'span',
             { className: 'bold-font hover-yellow' },
-            '\xA0React\xA0',
+            'React\xA0',
             _react2.default.createElement(
               'span',
               { className: 'material-icons' },
@@ -27009,7 +27009,7 @@ var Me = function Me(_ref) {
           _react2.default.createElement(
             'span',
             { className: 'bold-font hover-yellow' },
-            'Material Design',
+            'Material Design\xA0',
             _react2.default.createElement(
               'span',
               { className: 'material-icons' },
@@ -35366,12 +35366,12 @@ var projects = [{
   link: '',
   github: ''
 }, {
-  title: 'Learn Map',
+  title: 'LearnMap',
   image: 'images/portfolio/learn-map-2.gif',
-  description: 'A website allowing experts to post the best learning resources for any topic and allowing learners to track their progress.',
+  description: 'Project Manager for a remote app project. LearnMap is website allowing experts to post the best learning resources for any topic and allowing learners to track their progress. Currently hosted at Heroku and mLab.',
   tags: ['meteor', 'react', 'mongodb'],
-  link: '',
-  github: ''
+  link: 'http://www.learnmap.site/',
+  github: 'https://github.com/SteveGBanton/Voyage2-Bears-13'
 }, {
   title: 'Yago URL Shortener',
   image: 'images/portfolio/yago.jpg',

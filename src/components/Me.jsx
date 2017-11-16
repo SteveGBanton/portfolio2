@@ -13,19 +13,19 @@ const Me = ({ }) => (
     </div>
     <div id="me-description">
       <div>
-        I’m a developer from Toronto. I like to create business-centered applications using
-        <a href="http://meteor.com" target="new"> 
+        I’m a developer from Toronto. I like to create business-centered applications using&nbsp;
+        <a href="http://meteor.com" target="new">
           <span className="bold-font hover-yellow">
-            &nbsp;Meteor&nbsp;
+            Meteor&nbsp;
             <span className="material-icons">
               open_in_new
             </span>
           </span>
         </a>
-          &
+          &&nbsp;
         <a href="http://reactjs.org" target="new">
           <span className="bold-font hover-yellow">
-            &nbsp;React&nbsp;
+            React&nbsp;
             <span className="material-icons">
               open_in_new
             </span>
@@ -34,7 +34,7 @@ const Me = ({ }) => (
         I&apos;m also a big fan of&nbsp;
         <a href="http://material.io" target="new">
           <span className="bold-font hover-yellow">
-            Material Design
+            Material Design&nbsp;
             <span className="material-icons">
               open_in_new
             </span>
