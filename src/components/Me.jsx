@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from 'material-ui/Icon';
 
-const Me = ({ }) => (
+const Me = () => (
   <div id="me" className="app-padding">
     <div id="me-pic">
       <img
@@ -13,33 +13,7 @@ const Me = ({ }) => (
     </div>
     <div id="me-description">
       <div>
-        I’m a developer from Toronto. I like to create business-centered applications using&nbsp;
-        <a href="http://meteor.com" target="new">
-          <span className="bold-font hover-yellow">
-            Meteor&nbsp;
-            <span className="material-icons">
-              open_in_new
-            </span>
-          </span>
-        </a>
-          &&nbsp;
-        <a href="http://reactjs.org" target="new">
-          <span className="bold-font hover-yellow">
-            React&nbsp;
-            <span className="material-icons">
-              open_in_new
-            </span>
-          </span>
-        </a>.
-        I&apos;m also a big fan of&nbsp;
-        <a href="http://material.io" target="new">
-          <span className="bold-font hover-yellow">
-            Material Design&nbsp;
-            <span className="material-icons">
-              open_in_new
-            </span>
-          </span>
-        </a>.
+        Currently located in Toronto, building applications using React, Golang and Meteor.
       </div>
     </div>
   </div>

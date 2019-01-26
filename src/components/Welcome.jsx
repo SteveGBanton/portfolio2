@@ -59,9 +59,9 @@ const Welcome = () => (
       <div id="welcome-welcome" className="app-padding">
         <h1>Hi, I'm Steve.
           <br />
-        I build JavaScript apps
+          {"I'm a Full Stack Engineer"}
           <br />
-        for desktop and mobile
+          working at <a id="no-underline" target="_blank" rel="noopener noreferrer" href="https://www.dealtap.ca">DealTap</a>
           <span className="blink">_</span>
         </h1>
       </div>

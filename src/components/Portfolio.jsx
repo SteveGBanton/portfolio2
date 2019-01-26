@@ -10,19 +10,18 @@ const Element = Scroll.Element;
 
 const projects = [
   {
-    title: 'Educa Admin',
-    image: 'images/portfolio/educa.jpg',
-    description: 'Fully-featured school administration software. Account management for Students, Teachers, Parents and Administrators, and modules to create custom forms, uploading to cloud storage, charting student progress, built-in internationalization and more.',
+    title: 'Nova',
+    image: 'images/portfolio/nova.jpg',
+    description: 'Design thinking tool library & realtime collaboration tool.',
     tags: ['meteor', 'react', 'mongodb'],
-    link: '',
-    github: '',
+    link: 'https://www.novatools.org/',
   },
   {
     title: 'LearnMap',
     image: 'images/portfolio/learn-map-2.gif',
     description: 'Project Manager for a remote app project. LearnMap is website allowing experts to post the best learning resources for any topic and allowing learners to track their progress. Currently hosted at Heroku and mLab.',
     tags: ['meteor', 'react', 'mongodb'],
-    link: 'http://www.learnmap.site/',
+    link: 'https://learnmap.herokuapp.com/',
     github: 'https://github.com/SteveGBanton/Voyage2-Bears-13',
   },
   {

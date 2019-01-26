@@ -26911,9 +26911,14 @@ var Welcome = function Welcome() {
           null,
           'Hi, I\'m Steve.',
           _react2.default.createElement('br', null),
-          'I build JavaScript apps',
+          "I'm a Full Stack Engineer",
           _react2.default.createElement('br', null),
-          'for desktop and mobile',
+          'working at ',
+          _react2.default.createElement(
+            'a',
+            { id: 'no-underline', target: '_blank', rel: 'noopener noreferrer', href: 'https://www.dealtap.ca' },
+            'DealTap'
+          ),
           _react2.default.createElement(
             'span',
             { className: 'blink' },
@@ -26948,11 +26953,7 @@ var _Icon2 = _interopRequireDefault(_Icon);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
-
-var Me = function Me(_ref) {
-  _objectDestructuringEmpty(_ref);
-
+var Me = function Me() {
   return _react2.default.createElement(
     'div',
     { id: 'me', className: 'app-padding' },
@@ -26972,52 +26973,7 @@ var Me = function Me(_ref) {
       _react2.default.createElement(
         'div',
         null,
-        'I\u2019m a developer from Toronto. I like to create business-centered applications using\xA0',
-        _react2.default.createElement(
-          'a',
-          { href: 'http://meteor.com', target: 'new' },
-          _react2.default.createElement(
-            'span',
-            { className: 'bold-font hover-yellow' },
-            'Meteor\xA0',
-            _react2.default.createElement(
-              'span',
-              { className: 'material-icons' },
-              'open_in_new'
-            )
-          )
-        ),
-        '&\xA0',
-        _react2.default.createElement(
-          'a',
-          { href: 'http://reactjs.org', target: 'new' },
-          _react2.default.createElement(
-            'span',
-            { className: 'bold-font hover-yellow' },
-            'React\xA0',
-            _react2.default.createElement(
-              'span',
-              { className: 'material-icons' },
-              'open_in_new'
-            )
-          )
-        ),
-        '. I\'m also a big fan of\xA0',
-        _react2.default.createElement(
-          'a',
-          { href: 'http://material.io', target: 'new' },
-          _react2.default.createElement(
-            'span',
-            { className: 'bold-font hover-yellow' },
-            'Material Design\xA0',
-            _react2.default.createElement(
-              'span',
-              { className: 'material-icons' },
-              'open_in_new'
-            )
-          )
-        ),
-        '.'
+        'Currently located in Toronto, building applications using React, Golang and Meteor.'
       )
     )
   );
@@ -31871,11 +31827,11 @@ var _Icon2 = _interopRequireDefault(_Icon);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var frontEnd = ['React.js / Redux', 'React Native', 'D3.js', 'jQuery', 'CSS/SASS/LESS', 'Wordpress'];
+var frontEnd = ['React', 'Apollo / GraphQL', 'JSS/CSS/SASS', 'D3'];
 
-var tools = ['NPM', 'Git', 'Webpack', 'Babel', 'Mocha'];
+var tools = ['Docker', 'NPM / Yarn', 'Git', 'Parcel / Webpack', 'Jest', 'Gatling (Load Testing)'];
 
-var backEnd = ['Meteor.js', 'Node.js', 'Express.js', 'MongoDB', 'AWS'];
+var backEnd = ['Golang', 'Meteor / Node', 'GraphQL APIs', 'Dgraph', 'PostgreSQL', 'MongoDB', 'AWS'];
 
 var WhatIDo = function WhatIDo() {
   return _react2.default.createElement(
@@ -35359,18 +35315,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Element = _reactScroll2.default.Element;
 
 var projects = [{
-  title: 'Educa Admin',
-  image: 'images/portfolio/educa.jpg',
-  description: 'Fully-featured school administration software. Account management for Students, Teachers, Parents and Administrators, and modules to create custom forms, uploading to cloud storage, charting student progress, built-in internationalization and more.',
+  title: 'Nova',
+  image: 'images/portfolio/nova.jpg',
+  description: 'Design thinking tool library & realtime collaboration tool.',
   tags: ['meteor', 'react', 'mongodb'],
-  link: '',
-  github: ''
+  link: 'https://www.novatools.org/'
 }, {
   title: 'LearnMap',
   image: 'images/portfolio/learn-map-2.gif',
   description: 'Project Manager for a remote app project. LearnMap is website allowing experts to post the best learning resources for any topic and allowing learners to track their progress. Currently hosted at Heroku and mLab.',
   tags: ['meteor', 'react', 'mongodb'],
-  link: 'http://www.learnmap.site/',
+  link: 'https://learnmap.herokuapp.com/',
   github: 'https://github.com/SteveGBanton/Voyage2-Bears-13'
 }, {
   title: 'Yago URL Shortener',
@@ -37289,7 +37244,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Ope
 exports.push([module.i, "@import url(https://fonts.googleapis.com/icon?family=Material+Icons);", ""]);
 
 // module
-exports.push([module.i, "html, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.material-icons {\n  font-family: 'Material Icons';\n  font-size: 15px; }\n\n.app-padding {\n  padding-left: 19vw;\n  padding-right: 19vw; }\n\n.paper-width {\n  width: 100%;\n  box-sizing: border-box;\n  display: flex;\n  padding: 60px 20px 60px 20px;\n  flex-flow: row wrap;\n  align-items: center;\n  align-content: center; }\n\n.shadow1 {\n  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }\n\n.shadow2 {\n  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.18), 0 3px 7px rgba(0, 0, 0, 0.15); }\n\n.shadow3 {\n  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.18), 0 10px 10px rgba(0, 0, 0, 0.18); }\n\n.darken {\n  filter: brightness(0.6); }\n\n.darken:hover {\n  filter: brightness(0.9); }\n\n#welcome-header {\n  position: relative;\n  background: linear-gradient(150deg, #2196F3, #0d47a1);\n  z-index: 5;\n  height: 100vh; }\n  #welcome-header #welcome-menu {\n    height: 110px;\n    color: #FFF;\n    display: flex;\n    flex-flow: row nowrap;\n    align-items: flex-end;\n    justify-content: center; }\n    #welcome-header #welcome-menu #welcome-logo {\n      flex: 1 1;\n      height: 40px;\n      padding: 0;\n      margin: 0;\n      display: flex;\n      align-items: center; }\n    #welcome-header #welcome-menu #welcome-menu-items {\n      flex: 0 0;\n      height: 40px;\n      padding: 0;\n      margin: 0;\n      display: flex;\n      align-items: center; }\n      #welcome-header #welcome-menu #welcome-menu-items .nav-link {\n        padding-left: 30px; }\n  #welcome-header #welcome-welcome {\n    color: white;\n    z-index: 5;\n    display: flex;\n    align-items: center;\n    height: calc(100vh - 110px);\n    padding-top: 0px;\n    padding-bottom: 0px; }\n\n#welcome-blob1 {\n  position: absolute;\n  z-index: 2;\n  width: 220vw;\n  top: calc(20vh);\n  left: -70vw;\n  background: #0d47a1;\n  border-bottom-left-radius: 50%;\n  border-bottom-right-radius: 50%;\n  transform: rotate(3deg);\n  display: flex;\n  align-items: center;\n  height: 90vh;\n  padding-top: 0px;\n  padding-bottom: 0px; }\n\n#me {\n  position: relative;\n  z-index: 1;\n  height: 850px;\n  display: flex;\n  flex-flow: row wrap;\n  align-items: center;\n  align-content: center;\n  background-color: #fff; }\n  #me #me-pic {\n    flex: 1 1;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 50%;\n    height: 300px;\n    min-width: 325px; }\n  #me #me-description {\n    font-size: 30px;\n    line-height: 120%;\n    flex: 1 1;\n    display: flex;\n    min-width: 325px;\n    align-items: center; }\n\n#what-i-do {\n  background: linear-gradient(150deg, #2196F3, #0d47a1);\n  color: white;\n  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);\n  padding-top: 180px;\n  padding-bottom: 180px; }\n  #what-i-do #techtable {\n    display: flex;\n    justify-content: center;\n    flex-flow: row wrap;\n    align-items: flex-start;\n    padding: 0 3vw 30px 3vw; }\n    #what-i-do #techtable .header-text {\n      padding: 10px;\n      margin: 10px;\n      background-color: #F9F9F9;\n      color: white; }\n    #what-i-do #techtable .skill {\n      padding: 10px;\n      margin: 10px;\n      background-color: white;\n      color: black; }\n  #what-i-do #techtable > * {\n    flex: 1 0 auto;\n    min-width: 200px;\n    margin: 20px; }\n\n#portfolio {\n  padding-top: 180px;\n  padding-bottom: 180px; }\n  #portfolio #portfolio-items {\n    width: 100%;\n    display: flex;\n    flex-flow: row wrap;\n    align-items: center;\n    justify-content: center; }\n\n#contact {\n  color: white;\n  height: 100vh;\n  background: linear-gradient(-110deg, #2196F3, #0d47a1);\n  padding-top: 180px;\n  padding-bottom: 180px;\n  box-sizing: border-box;\n  display: flex;\n  flex-flow: column wrap;\n  align-content: center;\n  align-items: center;\n  justify-content: center; }\n\nh1 {\n  padding-bottom: 80px;\n  font-size: 50px; }\n\nbody {\n  display: relative;\n  padding: 0;\n  margin: 0;\n  background-color: white;\n  font-family: Open Sans, Helvetica;\n  overflow-x: hidden;\n  font-weight: 300;\n  color: #757575; }\n\na {\n  position: relative;\n  color: inherit;\n  text-decoration: none; }\n\na:hover {\n  color: #FFC107; }\n\na:before {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 2px;\n  bottom: 0;\n  left: 0;\n  background-color: #FFC107;\n  visibility: hidden;\n  -webkit-transform: scaleX(0);\n  transform: scaleX(0);\n  -webkit-transition: all 0.3s ease-in-out 0s;\n  transition: all 0.3s ease-in-out 0s; }\n\na:hover:before {\n  visibility: visible;\n  -webkit-transform: scaleX(1);\n  transform: scaleX(1); }\n\na:visited {\n  color: inherit;\n  text-decoration: none; }\n\n.blink {\n  color: #FFC107;\n  opacity: 0;\n  animation: cursor 1s infinite;\n  margin: 3px; }\n\n.bold-font {\n  font-weight: 600; }\n\n.hover-yellow:hover {\n  color: #FFC107; }\n\n@keyframes cursor {\n  0% {\n    opacity: 0; }\n  40% {\n    opacity: 0; }\n  50% {\n    opacity: 1; }\n  90% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n/* Small Device Rendering */\n@media screen and (max-width: 850px) {\n  h1 {\n    font-size: 30px; }\n  .app-padding {\n    padding-left: 6vw;\n    padding-right: 6vw; }\n  @keyframes menu-in {\n    0% {\n      opacity: 0; }\n    100% {\n      opacity: 100; } }\n  @keyframes menu-out {\n    0% {\n      left: 0; }\n    100% {\n      left: -100vw; } } }\n", ""]);
+exports.push([module.i, "html, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.material-icons {\n  font-family: 'Material Icons';\n  font-size: 15px; }\n\n.app-padding {\n  padding-left: 19vw;\n  padding-right: 19vw; }\n\n.paper-width {\n  width: 100%;\n  box-sizing: border-box;\n  display: flex;\n  padding: 60px 20px 60px 20px;\n  flex-flow: row wrap;\n  align-items: center;\n  align-content: center; }\n\n.shadow1 {\n  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }\n\n.shadow2 {\n  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.18), 0 3px 7px rgba(0, 0, 0, 0.15); }\n\n.shadow3 {\n  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.18), 0 10px 10px rgba(0, 0, 0, 0.18); }\n\n.darken {\n  filter: brightness(0.6); }\n\n.darken:hover {\n  filter: brightness(0.9); }\n\n#welcome-header {\n  position: relative;\n  background: linear-gradient(150deg, #2196F3, #0d47a1);\n  z-index: 5;\n  height: 100vh; }\n  #welcome-header #welcome-menu {\n    height: 110px;\n    color: #FFF;\n    display: flex;\n    flex-flow: row nowrap;\n    align-items: flex-end;\n    justify-content: center; }\n    #welcome-header #welcome-menu #welcome-logo {\n      flex: 1 1;\n      height: 40px;\n      padding: 0;\n      margin: 0;\n      display: flex;\n      align-items: center; }\n    #welcome-header #welcome-menu #welcome-menu-items {\n      flex: 0 0;\n      height: 40px;\n      padding: 0;\n      margin: 0;\n      display: flex;\n      align-items: center; }\n      #welcome-header #welcome-menu #welcome-menu-items .nav-link {\n        padding-left: 30px; }\n  #welcome-header #welcome-welcome {\n    color: white;\n    z-index: 5;\n    display: flex;\n    align-items: center;\n    height: calc(100vh - 110px);\n    padding-top: 0px;\n    padding-bottom: 0px; }\n\n#welcome-blob1 {\n  position: absolute;\n  z-index: 2;\n  width: 220vw;\n  top: calc(20vh);\n  left: -70vw;\n  background: #0d47a1;\n  border-bottom-left-radius: 50%;\n  border-bottom-right-radius: 50%;\n  transform: rotate(3deg);\n  display: flex;\n  align-items: center;\n  height: 90vh;\n  padding-top: 0px;\n  padding-bottom: 0px; }\n\n#me {\n  position: relative;\n  z-index: 1;\n  height: 850px;\n  display: flex;\n  flex-flow: row wrap;\n  align-items: center;\n  align-content: center;\n  background-color: #fff; }\n  #me #me-pic {\n    flex: 1 1;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 50%;\n    height: 300px;\n    min-width: 325px; }\n  #me #me-description {\n    font-size: 30px;\n    line-height: 120%;\n    flex: 1 1;\n    display: flex;\n    min-width: 325px;\n    align-items: center; }\n\n#what-i-do {\n  background: linear-gradient(150deg, #2196F3, #0d47a1);\n  color: white;\n  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);\n  padding-top: 180px;\n  padding-bottom: 180px; }\n  #what-i-do #techtable {\n    display: flex;\n    justify-content: center;\n    flex-flow: row wrap;\n    align-items: flex-start;\n    padding: 0 3vw 30px 3vw; }\n    #what-i-do #techtable .header-text {\n      padding: 10px;\n      margin: 10px;\n      background-color: #F9F9F9;\n      color: white; }\n    #what-i-do #techtable .skill {\n      padding: 10px;\n      margin: 10px;\n      background-color: white;\n      color: black; }\n  #what-i-do #techtable > * {\n    flex: 1 0 auto;\n    min-width: 200px;\n    margin: 20px; }\n\n#portfolio {\n  padding-top: 180px;\n  padding-bottom: 180px; }\n  #portfolio #portfolio-items {\n    width: 100%;\n    display: flex;\n    flex-flow: row wrap;\n    align-items: center;\n    justify-content: center; }\n\n#contact {\n  color: white;\n  height: 100vh;\n  background: linear-gradient(-110deg, #2196F3, #0d47a1);\n  padding-top: 180px;\n  padding-bottom: 180px;\n  box-sizing: border-box;\n  display: flex;\n  flex-flow: column wrap;\n  align-content: center;\n  align-items: center;\n  justify-content: center; }\n\nh1 {\n  padding-bottom: 80px;\n  font-size: 50px; }\n\nbody {\n  display: relative;\n  padding: 0;\n  margin: 0;\n  background-color: white;\n  font-family: Open Sans, Helvetica;\n  overflow-x: hidden;\n  font-weight: 300;\n  color: #757575; }\n\n#no-underline:before {\n  background-color: rgba(0, 0, 0, 0); }\n\na {\n  position: relative;\n  color: inherit;\n  text-decoration: none; }\n\na:hover {\n  color: #FFC107; }\n\na:before {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 2px;\n  bottom: 0;\n  left: 0;\n  background-color: #FFC107;\n  visibility: hidden;\n  -webkit-transform: scaleX(0);\n  transform: scaleX(0);\n  -webkit-transition: all 0.3s ease-in-out 0s;\n  transition: all 0.3s ease-in-out 0s; }\n\na:hover:before {\n  visibility: visible;\n  -webkit-transform: scaleX(1);\n  transform: scaleX(1); }\n\na:visited {\n  color: inherit;\n  text-decoration: none; }\n\n.blink {\n  color: #FFC107;\n  opacity: 0;\n  animation: cursor 1s infinite;\n  margin: 3px; }\n\n.bold-font {\n  font-weight: 600; }\n\n.hover-yellow:hover {\n  color: #FFC107; }\n\n@keyframes cursor {\n  0% {\n    opacity: 0; }\n  40% {\n    opacity: 0; }\n  50% {\n    opacity: 1; }\n  90% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n/* Small Device Rendering */\n@media screen and (max-width: 850px) {\n  h1 {\n    font-size: 30px; }\n  .app-padding {\n    padding-left: 6vw;\n    padding-right: 6vw; }\n  @keyframes menu-in {\n    0% {\n      opacity: 0; }\n    100% {\n      opacity: 100; } }\n  @keyframes menu-out {\n    0% {\n      left: 0; }\n    100% {\n      left: -100vw; } } }\n", ""]);
 
 // exports
 

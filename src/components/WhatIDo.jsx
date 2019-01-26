@@ -10,26 +10,27 @@ import List, {
 import Icon from 'material-ui/Icon';
 
 const frontEnd = [
-  'React.js / Redux',
-  'React Native',
-  'D3.js',
-  'jQuery',
-  'CSS/SASS/LESS',
-  'Wordpress',
+  'React',
+  'Apollo / GraphQL',
+  'JSS/CSS/SASS',
+  'D3',
 ];
 
 const tools = [
-  'NPM',
+  'Docker',
+  'NPM / Yarn',
   'Git',
-  'Webpack',
-  'Babel',
-  'Mocha',
+  'Parcel / Webpack',
+  'Jest',
+  'Gatling (Load Testing)',
 ];
 
 const backEnd = [
-  'Meteor.js',
-  'Node.js',
-  'Express.js',
+  'Golang',
+  'Meteor / Node',
+  'GraphQL APIs',
+  'Dgraph',
+  'PostgreSQL',
   'MongoDB',
   'AWS',
 ];
