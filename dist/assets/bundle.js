@@ -26916,8 +26916,8 @@ var Welcome = function Welcome() {
           'working at ',
           _react2.default.createElement(
             'a',
-            { id: 'no-underline', target: '_blank', rel: 'noopener noreferrer', href: 'https://www.dealtap.ca' },
-            'DealTap'
+            { id: 'no-underline', target: '_blank', rel: 'noopener noreferrer', href: 'https://www.remine.com' },
+            'Remine'
           ),
           _react2.default.createElement(
             'span',

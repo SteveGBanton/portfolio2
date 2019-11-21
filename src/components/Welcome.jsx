@@ -3,7 +3,6 @@ import Scroll from 'react-scroll';
 
 const Link = Scroll.Link;
 
-
 const Welcome = () => (
   <div>
     <div id="welcome-header" className="shadow2">
@@ -61,7 +60,7 @@ const Welcome = () => (
           <br />
           {"I'm a Full Stack Engineer"}
           <br />
-          working at <a id="no-underline" target="_blank" rel="noopener noreferrer" href="https://www.dealtap.ca">DealTap</a>
+          working at <a id="no-underline" target="_blank" rel="noopener noreferrer" href="https://www.remine.com">Remine</a>
           <span className="blink">_</span>
         </h1>
       </div>
